@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 
 public class RestaurantPageTest extends BaseTest {
@@ -27,7 +29,7 @@ public class RestaurantPageTest extends BaseTest {
 
         restaurantPage.clickOnPhotosTab();
         String pageText = restaurantPage.getPhotosTabText();
-        assertEquals(pageText,"Looking for pictures of the food and vibe at Cavallino Rosso? Take a peek at these real-life photos and images of the atmosphere and dishes at Cavallino Rosso so you know what to expect for your next reservation. Eat with your eyes and awaken your inner foodie with these food pictures from the team at Cavallino Rosso.");
+        assertThat(pageText, containsString("Looking for pictures"));
     }
 
 
