@@ -32,7 +32,6 @@ public class RestaurantPageTest extends BaseTest {
         assertThat(pageText, containsString("Looking for pictures"));
     }
 
-
     @Test
     public void checkMenuTabText() throws InterruptedException {
 
