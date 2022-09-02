@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class RestaurantPageTest extends BaseTest {
 
 
+
     @Before
     public void SetUp() {
        /* System.setProperty("webdriver.chrome.driver", "/Users/dimitrischutin/qa_tools/chromedriver");
